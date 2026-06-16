@@ -5,28 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonico Caro Beats</title>
+
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <header>
-    <h1>SONICO CARO BEATS</h1>
-    <p>Beats exclusivos y licencias profesionales</p>
+
+    <h1>SONIDO CARO</h1>
+
+    <p>Beats Exclusivos • Producción Profesional</p>
+
+    <a href="#beats" class="cta">
+        Escuchar Beats
+    </a>
+
 </header>
 
-<section class="beats">
+<section id="beats">
 
-    <div class="beat-card">
-        <h2>Trap Type Beat</h2>
+    <h2>Últimos Beats</h2>
 
-        <audio controls>
-            <source src="beats/trap.mp3" type="audio/mpeg">
-        </audio>
+    <div class="beat-grid">
 
-        <div id='product-component-1'></div>
+        <div class="beat-card">
+
+            <img src="images/trap-cover.jpg">
+
+            <h3>Trap Type Beat</h3>
+
+            <audio controls>
+                <source src="beats/trap.mp3">
+            </audio>
+
+            <div id="product-component-1"></div>
+
+        </div>
+
     </div>
 
 </section>
+
+<section class="licenses">
+
+    <h2>Licencias</h2>
+
+    <div class="license-grid">
+
+        <div class="license">
+            <h3>BASIC</h3>
+            <p>MP3</p>
+            <span>USD 25</span>
+        </div>
+
+        <div class="license">
+            <h3>PREMIUM</h3>
+            <p>WAV + MP3</p>
+            <span>USD 75</span>
+        </div>
+
+        <div class="license exclusive">
+            <h3>EXCLUSIVE</h3>
+            <p>Derechos exclusivos</p>
+            <span>USD 250</span>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <h3>@ventidooo</h3>
+
+    <p>Sonico Caro © 2026</p>
+
+</footer>
 
 <script src="script.js"></script>
 
