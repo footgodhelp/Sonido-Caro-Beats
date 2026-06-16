@@ -356,20 +356,41 @@ footer p{
         gap:15px;
     }
 
-    .hero h1{
-        font-size:4rem;
-    }
+   .hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 10%;
 
-    .hero p{
-        font-size:1rem;
-    }
+    background:
+    linear-gradient(
+        rgba(0,0,0,.7),
+        rgba(0,0,0,.85)
+    ),
+    url('images/hero-bg.jpg');
 
-    .section-title{
-        font-size:2.5rem;
-    }
+    background-size:cover;
+    background-position:center;
 
-    .stats{
-        flex-direction:column;
-    }
+    background-attachment:fixed;
+}
+audio::-webkit-media-controls-panel{
+    background:#1c1c1c;
+}
 
+audio{
+    border-radius:50px;
+    overflow:hidden;
+    width:100%;
+}
+#particles-js{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:-1;
+}
 }

@@ -219,6 +219,51 @@
 </footer>
 
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 
+<div id="particles-js"></div>
+
+<script>
+tsParticles.load("particles-js", {
+  particles: {
+    number: {
+      value: 60
+    },
+    color: {
+      value: "#ff2e63"
+    },
+    links: {
+      enable: true,
+      color: "#ff2e63",
+      opacity: 0.2
+    },
+    move: {
+      enable: true,
+      speed: 1
+    },
+    size: {
+      value: 2
+    },
+    opacity: {
+      value: 0.5
+    }
+  },
+  fullScreen: {
+    enable: true,
+    zIndex: -1
+  }
+});
+</script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:1000,
+    once:true
+});
+</script>
+<section class="section" data-aos="fade-up">
 </body>
 </html>
