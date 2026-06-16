@@ -1,48 +1,98 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sonico Caro Beats</title>
+    <title>SONIDO CARO | Beats Exclusivos</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
+<nav class="navbar">
+    <div class="logo">SONIDO CARO</div>
 
-    <h1>SONIDO CARO</h1>
+    <ul>
+        <li><a href="#beats">Beats</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#licencias">Licencias</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
 
-    <p>Beats Exclusivos • Producción Profesional</p>
+<section class="hero">
 
-    <a href="#beats" class="cta">
-        Escuchar Beats
-    </a>
+    <div class="overlay"></div>
 
-</header>
+    <div class="hero-content">
 
-<section id="beats">
+        <h1>
+            BEATS QUE <span>DEJAN HUELLA</span>
+        </h1>
 
-    <h2>Últimos Beats</h2>
+        <p>
+            Producción musical urbana • Beats exclusivos • Mezcla y Mastering
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#beats" class="btn-primary">
+                ESCUCHAR BEATS
+            </a>
+
+            <a href="#contacto" class="btn-secondary">
+                TRABAJEMOS JUNTOS
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="stats">
+
+    <div class="stat">
+        <h2>100+</h2>
+        <p>Beats creados</p>
+    </div>
+
+    <div class="stat">
+        <h2>15K+</h2>
+        <p>Generados con artistas</p>
+    </div>
+
+    <div class="stat">
+        <h2>24/7</h2>
+        <p>Disponible para proyectos</p>
+    </div>
+
+</section>
+
+<section id="beats" class="section">
+
+    <h2 class="section-title">BEATS DESTACADOS</h2>
 
     <div class="beat-grid">
 
         <div class="beat-card">
 
-            <img src="images/trap-cover.jpg">
+            <img src="images/trap-cover.jpg" alt="Beat">
 
-            <h3>Trap Type Beat</h3>
+            <div class="beat-info">
 
-            <audio controls>
-                <source src="beats/trap.mp3">
-            </audio>
+                <h3>Dark Trap 2026</h3>
 
-            <div id="product-component-1"></div>
+                <span>TRAP • 140 BPM</span>
+
+                <audio controls>
+                    <source src="beats/trap.mp3" type="audio/mpeg">
+                </audio>
+
+                <div id="product-component-1"></div>
+
+            </div>
 
         </div>
 
@@ -50,39 +100,121 @@
 
 </section>
 
-<section class="licenses">
+<section id="servicios" class="section services">
 
-    <h2>Licencias</h2>
+    <h2 class="section-title">SERVICIOS</h2>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <h3>🎹 Producción Musical</h3>
+
+            <p>
+                Beats personalizados para llevar tu sonido al siguiente nivel.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>🎤 Grabación</h3>
+
+            <p>
+                Sesiones profesionales para capturar la mejor versión de tu voz.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>🎚️ Mezcla y Mastering</h3>
+
+            <p>
+                Sonido potente, limpio y listo para todas las plataformas.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="licencias" class="section">
+
+    <h2 class="section-title">LICENCIAS</h2>
 
     <div class="license-grid">
 
-        <div class="license">
+        <div class="license-card">
+
             <h3>BASIC</h3>
-            <p>MP3</p>
-            <span>USD 25</span>
+
+            <span>$25 USD</span>
+
+            <ul>
+                <li>MP3</li>
+                <li>Uso Comercial</li>
+            </ul>
+
         </div>
 
-        <div class="license">
+        <div class="license-card premium">
+
             <h3>PREMIUM</h3>
-            <p>WAV + MP3</p>
-            <span>USD 75</span>
+
+            <span>$75 USD</span>
+
+            <ul>
+                <li>WAV + MP3</li>
+                <li>Uso Comercial</li>
+                <li>Mayor Calidad</li>
+            </ul>
+
         </div>
 
-        <div class="license exclusive">
+        <div class="license-card exclusive">
+
             <h3>EXCLUSIVE</h3>
-            <p>Derechos exclusivos</p>
-            <span>USD 250</span>
+
+            <span>$250 USD</span>
+
+            <ul>
+                <li>Derechos Exclusivos</li>
+                <li>Beat retirado de venta</li>
+            </ul>
+
         </div>
 
     </div>
 
 </section>
 
-<footer>
+<section class="artists section">
 
-    <h3>@ventidooo</h3>
+    <h2 class="section-title">ARTISTAS CON LOS QUE TRABAJÉ</h2>
 
-    <p>Sonico Caro © 2026</p>
+    <div class="artist-grid">
+
+        <div class="artist-card">
+            Caldora
+        </div>
+
+        <div class="artist-card">
+            Alejo Issak
+        </div>
+
+        <div class="artist-card">
+            Jere Klein
+        </div>
+
+    </div>
+
+</section>
+
+<footer id="contacto">
+
+    <h2>SONIDO CARO</h2>
+
+    <p>@ventidooo</p>
+
+    <p>
+        Producción Musical • Beats • Mezcla & Master
+    </p>
 
 </footer>
 
