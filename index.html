@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONIDO CARO | Beats Exclusivos</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div id="introScreen" style="position:fixed;inset:0;background:#000;z-index:99999;display:flex;align-items:center;justify-content:center;flex-direction:column;color:white;">
+<h1 style="font-size:4rem;margin-bottom:20px;">SONIDO CARO</h1>
+<button id="enterBtn" style="padding:15px 30px;font-size:1.2rem;cursor:pointer;">ENTRAR</button>
+</div>
+<audio id="introAudio">
+<source src="TAG SONIDO CARO INICIO.wav" type="audio/wav">
+</audio>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+ const btn=document.getElementById('enterBtn');
+ btn.addEventListener('click',()=>{
+   const a=document.getElementById('introAudio');
+   a.play();
+   document.getElementById('introScreen').style.display='none';
+ });
+});
+</script>
+
+
+<nav class="navbar">
+    <div class="logo">SONIDO CARO</div>
+
+    <ul>
+        <li><a href="#beats">Beats</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#licencias">Licencias</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>
+            BEATS QUE <span>DEJAN HUELLA</span>
+        </h1>
+
+        <p>
+            Producción musical urbana • Beats exclusivos • Mezcla y Mastering
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#beats" class="btn-primary">
+                ESCUCHAR BEATS
+            </a>
+
+            <a href="#contacto" class="btn-secondary">
+                TRABAJEMOS JUNTOS
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="stats">
+
+    <div class="stat">
+        <h2>100+</h2>
+        <p>Beats creados</p>
+    </div>
+
+    <div class="stat">
+        <h2>15K+</h2>
+        <p>Generados con artistas</p>
+    </div>
+
+    <div class="stat">
+        <h2>24/7</h2>
+        <p>Disponible para proyectos</p>
+    </div>
+
+</section>
+
+<section id="beats" class="section">
+
+    <h2 class="section-title">BEATS DESTACADOS</h2>
+
+    <div class="beat-grid">
+
+        <div class="beat-card">
+
+            <img src="images/trap-cover.jpg" alt="Beat">
+
+            <div class="beat-info">
+
+                <h3>Dark Trap 2026</h3>
+
+                <span>TRAP • 140 BPM</span>
+
+                <audio controls>
+                    <source src="beats/trap.mp3" type="audio/mpeg">
+                </audio>
+
+                <div id="product-component-1"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="servicios" class="section services">
+
+    <h2 class="section-title">SERVICIOS</h2>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <h3>🎹 Producción Musical</h3>
+
+            <p>
+                Beats personalizados para llevar tu sonido al siguiente nivel.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>🎤 Grabación</h3>
+
+            <p>
+                Sesiones profesionales para capturar la mejor versión de tu voz.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>🎚️ Mezcla y Mastering</h3>
+
+            <p>
+                Sonido potente, limpio y listo para todas las plataformas.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="licencias" class="section">
+
+    <h2 class="section-title">LICENCIAS</h2>
+
+    <div class="license-grid">
+
+        <div class="license-card">
+
+            <h3>BASIC</h3>
+
+            <span>$25 USD</span>
+
+            <ul>
+                <li>MP3</li>
+                <li>Uso Comercial</li>
+            </ul>
+
+        </div>
+
+        <div class="license-card premium">
+
+            <h3>PREMIUM</h3>
+
+            <span>$75 USD</span>
+
+            <ul>
+                <li>WAV + MP3</li>
+                <li>Uso Comercial</li>
+                <li>Mayor Calidad</li>
+            </ul>
+
+        </div>
+
+        <div class="license-card exclusive">
+
+            <h3>EXCLUSIVE</h3>
+
+            <span>$250 USD</span>
+
+            <ul>
+                <li>Derechos Exclusivos</li>
+                <li>Beat retirado de venta</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="artists section">
+
+    <h2 class="section-title">ARTISTAS CON LOS QUE TRABAJÉ</h2>
+
+    <div class="artist-grid">
+
+        <div class="artist-card">
+            Caldora
+        </div>
+
+        <div class="artist-card">
+            Alejo Issak
+        </div>
+
+        <div class="artist-card">
+            Jere Klein
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="turnos" class="section services">
+<h2 class="section-title">AGENDA TU TURNO</h2>
+<div class="booking-form">
+<input type="text" id="nombre" placeholder="Tu nombre" required>
+<input type="tel" id="telefono" placeholder="Tu WhatsApp" required>
+<select id="servicio">
+<option>Grabación</option>
+<option>Mezcla</option>
+<option>Mastering</option>
+<option>Beat Personalizado</option>
+</select>
+<input type="date" id="fecha" required>
+<input type="time" id="hora" required>
+<button id="reservarBtn">RESERVAR POR WHATSAPP</button>
+</div>
+</section>
+
+<footer id="contacto">
+
+    <h2>SONIDO CARO</h2>
+
+    <p>@ventidooo</p>
+
+    <p>
+        Producción Musical • Beats • Mezcla & Master
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+<div id="particles-js"></div>
+
+<script>
+tsParticles.load("particles-js", {
+  particles: {
+    number: {
+      value: 60
+    },
+    color: {
+      value: "#ff2e63"
+    },
+    links: {
+      enable: true,
+      color: "#ff2e63",
+      opacity: 0.2
+    },
+    move: {
+      enable: true,
+      speed: 1
+    },
+    size: {
+      value: 2
+    },
+    opacity: {
+      value: 0.5
+    }
+  },
+  fullScreen: {
+    enable: true,
+    zIndex: -1
+  }
+});
+</script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:1000,
+    once:true
+});
+</script>
+<section class="section" data-aos="fade-up">
+</body>
+</html>
