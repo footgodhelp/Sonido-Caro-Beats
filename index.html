@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SONIDO CARO | Beats Exclusivos</title>
+    <title>SC | Sonido Caro</title>
+<link rel="icon" href="favicon.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -11,25 +12,6 @@
 </head>
 
 <body>
-
-<div id="introScreen" style="position:fixed;inset:0;background:#000;z-index:99999;display:flex;align-items:center;justify-content:center;flex-direction:column;color:white;">
-<h1 style="font-size:4rem;margin-bottom:20px;">SONIDO CARO</h1>
-<button id="enterBtn" style="padding:15px 30px;font-size:1.2rem;cursor:pointer;">ENTRAR</button>
-</div>
-<audio id="introAudio">
-<source src="TAG SONIDO CARO INICIO.wav" type="audio/wav">
-</audio>
-<script>
-document.addEventListener('DOMContentLoaded',()=>{
- const btn=document.getElementById('enterBtn');
- btn.addEventListener('click',()=>{
-   const a=document.getElementById('introAudio');
-   a.play();
-   document.getElementById('introScreen').style.display='none';
- });
-});
-</script>
-
 
 <nav class="navbar">
     <div class="logo">SONIDO CARO</div>
@@ -68,6 +50,15 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     </div>
 
+</section>
+
+
+<section id="reservar" class="section reserva-premium">
+<h2 class="section-title">RESERVÁ TU SESIÓN</h2>
+<p style="text-align:center;margin-bottom:20px;">⚠️ Cupos limitados esta semana</p>
+<div style="text-align:center">
+<a href="https://wa.me/5491173678033" class="btn-primary btn-glow">AGENDAR POR WHATSAPP</a>
+</div>
 </section>
 
 <section class="stats">
@@ -223,24 +214,6 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     </div>
 
-</section>
-
-
-<section id="turnos" class="section services">
-<h2 class="section-title">AGENDA TU TURNO</h2>
-<div class="booking-form">
-<input type="text" id="nombre" placeholder="Tu nombre" required>
-<input type="tel" id="telefono" placeholder="Tu WhatsApp" required>
-<select id="servicio">
-<option>Grabación</option>
-<option>Mezcla</option>
-<option>Mastering</option>
-<option>Beat Personalizado</option>
-</select>
-<input type="date" id="fecha" required>
-<input type="time" id="hora" required>
-<button id="reservarBtn">RESERVAR POR WHATSAPP</button>
-</div>
 </section>
 
 <footer id="contacto">
