@@ -1,5 +1,12 @@
-[ 
-{"titulo":"BEAT REGUETTON","productor":"Ale The Producer","archivo":"BEATS/ATP_BEAT REGUETTON.wav"}
-
-{"titulo":"DARK TRAP","productor":"Test","archivo":"BEATS/TEST_DARK TRAP.wav"}
+[
+  {
+    "titulo":"BEAT REGUETTON",
+    "productor":"Ale The Producer",
+    "archivo":"BEATS/ATP_BEAT REGUETTON.wav"
+  },
+  {
+    "titulo":"DARK TRAP",
+    "productor":"Test",
+    "archivo":"BEATS/TEST_DARK TRAP.wav"
+  }
 ]
