@@ -413,3 +413,37 @@ background:#111;
 border-top:1px solid rgba(255,255,255,.08);
 border-bottom:1px solid rgba(255,255,255,.08);
 }
+
+
+:root{
+--gold:#d4af37;
+--gold2:#f5e7a1;
+}
+body{
+background:linear-gradient(180deg,#050505,#111);
+}
+.hero{
+position:relative;
+}
+.hero::before{
+content:'';
+position:fixed;
+inset:0;
+pointer-events:none;
+background:
+radial-gradient(circle at 20% 20%, rgba(212,175,55,.12), transparent 20%),
+radial-gradient(circle at 80% 40%, rgba(212,175,55,.10), transparent 20%),
+radial-gradient(circle at 50% 80%, rgba(245,231,161,.08), transparent 20%);
+}
+.logo,.section-title, h1 span{
+color:var(--gold)!important;
+text-shadow:0 0 15px rgba(212,175,55,.4);
+}
+button,.btn,.cta-button,a.cta{
+box-shadow:0 0 20px rgba(212,175,55,.35);
+}
+.whatsapp-float{
+position:fixed;right:20px;bottom:20px;z-index:9999;
+background:#25D366;color:white;padding:14px 18px;border-radius:999px;
+text-decoration:none;font-weight:bold;
+}
