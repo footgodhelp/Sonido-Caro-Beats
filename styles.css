@@ -449,13 +449,19 @@ text-decoration:none;font-weight:bold;
 }
 
 
-/* PREMIUM SONIDO CARO */
-body{background:#050505;}
-.logo{color:#d4a017!important;}
-.navbar a:hover{color:#d4a017!important;}
-.btn-primary{background:#d4a017!important;color:#111!important;}
-.btn-primary:hover{box-shadow:0 0 25px #d4a017!important;}
-.beat-card,.beat{background:#111;border:1px solid #d4a017;border-radius:18px;padding:20px;box-shadow:0 0 20px rgba(212,160,23,.2);}
-.precio-oferta{color:#ffd34d;font-size:2rem;font-weight:700;}
-.precio-anterior{text-decoration:line-through;color:#888;}
-.whatsapp-buy{display:inline-block;padding:12px 20px;background:#25D366;color:white;text-decoration:none;border-radius:12px;font-weight:700;}
+/* SONIDO CARO V3 */
+:root{--gold:#d4a017;}
+.beat-card,.beat{
+border:1px solid rgba(212,160,23,.35)!important;
+border-radius:18px!important;
+box-shadow:0 0 18px rgba(212,160,23,.12)!important;
+}
+.whatsapp-buy,.buy-btn{
+background:#25D366!important;
+border-radius:12px!important;
+font-weight:700!important;
+}
+.price,.precio-oferta{
+color:var(--gold)!important;
+font-weight:800!important;
+}
