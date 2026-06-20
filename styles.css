@@ -447,3 +447,10 @@ position:fixed;right:20px;bottom:20px;z-index:9999;
 background:#25D366;color:white;padding:14px 18px;border-radius:999px;
 text-decoration:none;font-weight:bold;
 }
+
+
+.price{font-size:1.6rem;font-weight:700;color:#d4af37;margin:12px 0}
+.buy-btn{display:block;text-align:center;background:#d4af37;color:#000;padding:12px;border-radius:12px;text-decoration:none;font-weight:700;margin-top:10px}
+.buy-btn:hover{transform:scale(1.03)}
+.premium-card{border:1px solid #d4af37;box-shadow:0 0 20px rgba(212,175,55,.15)}
+.logo,.section-title{color:#d4af37}
