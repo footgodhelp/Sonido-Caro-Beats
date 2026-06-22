@@ -475,3 +475,12 @@ font-weight:800!important;
 .new-price{font-size:2rem;color:#d4a017;font-weight:800;margin:10px 0}
 .buy-btn{display:block;text-align:center;background:#25D366;color:white;padding:12px;border-radius:12px;text-decoration:none;font-weight:700}
 audio{width:100%;margin:12px 0}
+
+.logo,.hero h1 span,.stat h2,.service-card h3,.license-card span,footer h2{color:#d4a017!important;text-shadow:none!important}
+.navbar a:hover,.artist-card:hover{color:#d4a017!important}
+.btn-primary{background:#d4a017!important;color:#111!important}
+.btn-primary:hover{box-shadow:0 0 20px #d4a017!important}
+.btn-secondary{border-color:#d4a017!important;color:#d4a017!important}
+.beat-card{border:1px solid rgba(212,160,23,.3)}
+.beat-card:hover{box-shadow:0 10px 40px rgba(212,160,23,.25)}
+#beats{padding-top:30px}
