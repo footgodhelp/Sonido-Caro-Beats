@@ -484,3 +484,42 @@ audio{width:100%;margin:12px 0}
 .beat-card{border:1px solid rgba(212,160,23,.3)}
 .beat-card:hover{box-shadow:0 10px 40px rgba(212,160,23,.25)}
 #beats{padding-top:30px}
+
+
+/* SONIDO CARO NEXT */
+:root{--sc-gold:#d4a017;}
+.beat-card,.beat{
+background:#0d0d0d!important;
+border:1px solid rgba(212,160,23,.35)!important;
+border-radius:18px!important;
+box-shadow:0 0 18px rgba(212,160,23,.15)!important;
+transition:.25s;
+}
+.beat-card:hover,.beat:hover{
+transform:translateY(-4px);
+box-shadow:0 0 28px rgba(212,160,23,.35)!important;
+}
+.buy-btn,.whatsapp-buy{
+background:#25D366!important;
+font-weight:700!important;
+border-radius:12px!important;
+}
+.sc-price{
+font-size:1.6rem;
+font-weight:800;
+color:#d4a017;
+}
+.sc-album{
+padding:30px;
+margin:20px auto;
+border:1px solid #d4a017;
+border-radius:20px;
+background:linear-gradient(180deg,#111,#090909);
+}
+.sc-recrear{
+padding:30px;
+margin:20px auto;
+border:1px solid #d4a017;
+border-radius:20px;
+background:#111;
+}
