@@ -1,47 +1,30 @@
-﻿[
+[
     {
-        "titulo":  "ATP_BEAT REGUETTON",
-        "productor":  "Ale The Producer",
-        "archivo":  "BEATS/ATP_BEAT REGUETTON.wav"
+        "title": "ATP_BEAT REGUETTON",
+        "file": "ATP_BEAT REGUETTON.wav"
     },
     {
-        "titulo":  "drumless janno sk",
-        "productor":  "Ale The Producer",
-        "archivo":  "BEATS/drumless janno sk.wav"
+        "title": "drumless janno sk",
+        "file": "drumless janno sk.wav"
     },
     {
-        "titulo":  "TESTpassillos dorados 119 bpm 2025_2",
-        "productor":  "Ale The Producer",
-        "archivo":  "BEATS/TESTpassillos dorados 119 bpm 2025_2.wav"
+        "title": "TESTpassillos dorados 119 bpm 2025_2",
+        "file": "TESTpassillos dorados 119 bpm 2025_2.wav"
     },
     {
-        "titulo":  "TEST_333  124 bpm 2025_2",
-        "productor":  "Test",
-        "archivo":  "BEATS/TEST_333  124 bpm 2025_2.wav"
+        "title": "TEST_333  124 bpm 2025_2",
+        "file": "TEST_333  124 bpm 2025_2.wav"
     },
     {
-        "titulo":  "TEST_DARK TRAP",
-        "productor":  "Test",
-        "archivo":  "BEATS/TEST_DARK TRAP.wav"
+        "title": "TEST_DARK TRAP",
+        "file": "TEST_DARK TRAP.wav"
     },
     {
-        "titulo":  "TEST_olivia 94 bpm2025",
-        "productor":  "Test",
-        "archivo":  "BEATS/TEST_olivia 94 bpm2025.wav"
+        "title": "TEST_olivia 94 bpm2025",
+        "file": "TEST_olivia 94 bpm2025.wav"
     },
     {
-        "titulo":  "TEST_waxx 135 bpm",
-        "productor":  "Test",
-        "archivo":  "BEATS/TEST_waxx 135 bpm.wav"
-    },
-    {
-        "titulo":  "YO NO TENIA NA 🩸 - El Americano 4KT (Video Oficial) [aXzpCOZLJ8s] - Part_1",
-        "productor":  "Ale The Producer",
-        "archivo":  "BEATS/YO NO TENIA NA 🩸 - El Americano 4KT (Video Oficial) [aXzpCOZLJ8s] - Part_1.wav"
-    },
-    {
-        "titulo":  "YO NO TENIA NA 🩸 - El Americano 4KT (Video Oficial) [aXzpCOZLJ8s]",
-        "productor":  "Ale The Producer",
-        "archivo":  "BEATS/YO NO TENIA NA 🩸 - El Americano 4KT (Video Oficial) [aXzpCOZLJ8s].mp3"
+        "title": "TEST_waxx 135 bpm",
+        "file": "TEST_waxx 135 bpm.wav"
     }
 ]
