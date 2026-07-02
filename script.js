@@ -1,15 +1,12 @@
 const portadas = {
-    "Ale The Producer": [
-        "IMAGENES/ALE_IMAGEN1.jpg",
-        "IMAGENES/ALE_IMAGEN2.jpg",
-        "IMAGENES/ALE_IMAGEN3.jpg"
-    ],
+    "Ale The Producer": "IMAGENES/ALE_IMAGEN1.jpg",
+    "Test": "IMAGENES/TEST_IMAGEN1.jpg"
+};
 
-    "Test": [
-        "IMAGENES/TEST_IMAGEN1.jpg",
-        "IMAGENES/TEST_IMAGEN2.jpg",
-        "IMAGENES/TEST_IMAGEN3.jpg"
-    ]
+function obtenerPortada(productor){
+
+    return portadas[productor] || "IMAGENES/default.jpg";
+
 };
 
 // Obtiene una portada fija para cada beat
@@ -77,7 +74,7 @@ async function cargarBeats(){
 
                     <img
                         class="cover-img"
-                        src="${obtenerPortada(b.productor,b.titulo)}"
+                        src="${obtenerPortada(b.productor)}"
                         alt="${b.productor}">
 
                 </div>

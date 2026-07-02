@@ -525,30 +525,39 @@ background:#111;
 }
 .cover{
 
-    width:220px;
-    height:220px;
+    width:100%;
+    height:250px;
+
+    border-radius:18px 18px 0 0;
 
     overflow:hidden;
 
-    border-radius:18px;
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
 
     background:#111;
 
 }
 
-.cover-img{
+.cover img{
 
     width:100%;
+
     height:100%;
 
     object-fit:cover;
 
-    transition:.35s;
+    object-position:center;
+
+    transition:.45s ease;
 
 }
 
-.beat-card:hover .cover-img{
+.beat-card:hover .cover img{
 
-    transform:scale(1.08);
+    transform:scale(1.06);
 
 }
