@@ -4,28 +4,7 @@ const portadas = {
 };
 
 function obtenerPortada(productor){
-
     return portadas[productor] || "IMAGENES/default.jpg";
-
-};
-
-// Obtiene una portada fija para cada beat
-function obtenerPortada(productor, titulo){
-
-    if(!portadas[productor]){
-        return "IMAGENES/default.jpg";
-    }
-
-    const lista = portadas[productor];
-
-    let suma = 0;
-
-    for(let i = 0; i < titulo.length; i++){
-        suma += titulo.charCodeAt(i);
-    }
-
-    return lista[suma % lista.length];
-
 }
 
 async function cargarBeats(){
@@ -63,11 +42,16 @@ async function cargarBeats(){
 
             const precio="$25.000 ARS";
 
-            const mensaje=encodeURIComponent(
-                `Hola, quiero comprar el beat:\n\n${b.titulo}\n\nProductor: ${b.productor}`
+            const mensaje = encodeURIComponent(
+`Hola, quiero comprar el beat:
+
+${b.titulo}
+
+Productor: ${b.productor}`
             );
 
             contenedor.innerHTML += `
+
             <div class="beat-card premium-beat">
 
                 <div class="cover">
@@ -85,13 +69,9 @@ async function cargarBeats(){
 
                     <span class="producer">${b.productor}</span>
 
-                    <div class="old-price">
-                        $35.000
-                    </div>
+                    <div class="old-price">$35.000</div>
 
-                    <div class="new-price">
-                        ${precio}
-                    </div>
+                    <div class="new-price">${precio}</div>
 
                     <audio controls controlsList="nodownload">
                         <source src="${b.archivo}">
@@ -101,19 +81,18 @@ async function cargarBeats(){
                         class="buy-btn"
                         target="_blank"
                         href="https://wa.me/5491173678033?text=${mensaje}">
-
                         🟢 Comprar por WhatsApp
-
                     </a>
 
                 </div>
 
             </div>
+
             `;
 
         });
 
-        // Preview máximo 30 segundos
+        // Preview de 30 segundos
         document.querySelectorAll("audio").forEach(audio=>{
 
             audio.addEventListener("timeupdate",()=>{
@@ -121,14 +100,13 @@ async function cargarBeats(){
                 if(audio.currentTime >= 30){
 
                     audio.pause();
-
                     audio.currentTime = 0;
 
                 }
 
             });
 
-            // Solo un beat reproduciéndose
+            // Solo un reproductor activo
             audio.addEventListener("play",()=>{
 
                 document.querySelectorAll("audio").forEach(a=>{
